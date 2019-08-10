@@ -39,7 +39,7 @@ function! SpaceVim#layers#denite#config() abort
 
   let lnum = expand('<slnum>') + s:lnum - 1
   call SpaceVim#mapping#space#def('nnoremap', ['h', '[SPC]'], 'call call('
-        \ . string(s:_function('s:warp_denite')) . ', ["Denite help -input=SpaceVim"])',
+        \ . string(s:_function('s:warp_denite')) . ', ["Denite -start-filter help -input=SpaceVim"])',
         \ ['find-SpaceVim-help',
         \ [
         \ 'SPC h SPC is to find SpaceVim help',
@@ -51,7 +51,7 @@ function! SpaceVim#layers#denite#config() abort
 
   let lnum = expand('<slnum>') + s:lnum - 1
   call SpaceVim#mapping#space#def('nnoremap', ['b', 'b'], 'call call('
-        \ . string(s:_function('s:warp_denite')) . ', ["Denite buffer"])',
+        \ . string(s:_function('s:warp_denite')) . ', ["Denite -start-filter buffer"])',
         \ ['buffer-list',
         \ [
         \ 'SPC b b is to open buffer list via denite',
@@ -63,7 +63,7 @@ function! SpaceVim#layers#denite#config() abort
 
   let lnum = expand('<slnum>') + s:lnum - 1
   call SpaceVim#mapping#space#def('nnoremap', ['f', 'r'], 'call call('
-        \ . string(s:_function('s:warp_denite')) . ', ["Denite file_mru"])',
+        \ . string(s:_function('s:warp_denite')) . ', ["Denite -start-filter file_mru"])',
         \ ['open-recent-file',
         \ [
         \ 'SPC f r is to open recent file list',
@@ -75,7 +75,7 @@ function! SpaceVim#layers#denite#config() abort
 
   let lnum = expand('<slnum>') + s:lnum - 1
   call SpaceVim#mapping#space#def('nnoremap', ['j', 'i'], 'call call('
-        \ . string(s:_function('s:warp_denite')) . ', ["Denite outline"])',
+        \ . string(s:_function('s:warp_denite')) . ', ["Denite -start-filter outline"])',
         \ ['jump to a definition in buffer',
         \ [
         \ 'SPC j i is to jump to a definition in buffer',
@@ -111,7 +111,7 @@ function! SpaceVim#layers#denite#config() abort
 
   let lnum = expand('<slnum>') + s:lnum - 1
   call SpaceVim#mapping#space#def('nnoremap', ['f', 'f'], 'call call('
-        \ . string(s:_function('s:warp_denite')) . ', ["DeniteBufferDir file/rec"])',
+        \ . string(s:_function('s:warp_denite')) . ', ["DeniteBufferDir -start-filter file/rec"])',
         \ ['Find files in the directory of the current buffer',
         \ [
         \ '[SPC f f] is to find files in the directory of the current buffer',
@@ -123,7 +123,7 @@ function! SpaceVim#layers#denite#config() abort
 
   let lnum = expand('<slnum>') + s:lnum - 1
   call SpaceVim#mapping#space#def('nnoremap', ['p', 'f'], 'call call('
-        \ . string(s:_function('s:warp_denite')) . ', ["Denite file/rec"])',
+        \ . string(s:_function('s:warp_denite')) . ', ["Denite -start-filter file/rec"])',
         \ ['find files in current project',
         \ [
         \ '[SPC p f] is to find files in the root of the current project',
@@ -137,7 +137,7 @@ function! SpaceVim#layers#denite#config() abort
 
   let lnum = expand('<slnum>') + s:lnum - 1
   call SpaceVim#mapping#space#def('nnoremap', ['h', 'i'], 'call call('
-        \ . string(s:_function('s:warp_denite')) . ', ["DeniteCursorWord help"])',
+        \ . string(s:_function('s:warp_denite')) . ', ["DeniteCursorWord -start-filter help"])',
         \ ['get help with the symbol at point',
         \ [
         \ '[SPC h i] is to get help with the symbol at point',
